@@ -52,3 +52,40 @@ defaults write com.apple.dock autohide-delay -float 0; defaults write com.apple.
 sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.DiskArbitration.diskarbitrationd.plist DADisableEjectNotification -bool YES && sudo pkill diskarbitrationd
 sudo reboot
 ```
+
+Java Installation (Save as \*.sh and chmod +x the file )
+
+```bash
+#!/bin/bash
+
+# Define the URL and the target directory
+JDK_URL="https://download.java.net/java/GA/jdk21.0.2/f2283984656d49d69e91c558476027ac/13/GPL/openjdk-21.0.2_macos-aarch64_bin.tar.gz"
+TARGET_DIR="/Library/Java/JavaVirtualMachines/"
+
+# Download the JDK archive
+echo "Downloading JDK from $JDK_URL..."
+curl -L $JDK_URL -o openjdk.tar.gz
+
+# Extract the downloaded file
+echo "Extracting the JDK..."
+tar -xzf openjdk.tar.gz
+
+# Assuming the folder that starts with "jdk" is the JDK directory.
+# Note: This approach assumes only one directory in the extracted tar.gz starts with "jdk".
+JDK_DIR=$(find . -type d -name "jdk*" -print -quit)
+
+# Check if JDK_DIR is not empty
+if [[ -n $JDK_DIR ]]; then
+    # Move the JDK directory to the target location
+    echo "Moving $JDK_DIR to $TARGET_DIR"
+    sudo mv "$JDK_DIR" "$TARGET_DIR"
+    echo "JDK has been successfully moved to $TARGET_DIR"
+else
+    echo "JDK directory not found."
+fi
+
+# Cleanup the downloaded archive
+rm openjdk.tar.gz
+
+echo "Installation completed successfully."
+```
