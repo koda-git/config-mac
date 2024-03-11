@@ -1,6 +1,6 @@
 # My Mac Configuration
 
-Welcome to my Mac configuration repository! Here, you'll find everything you need to set up your Mac to mirror my development environment. This setup includes essential packages installed via Homebrew, iTerm configurations for a better terminal experience, and custom scripts for Quartz commands to enhance productivity.
+Welcome to my Mac configuration repository! Here, you'll find everything you need to set up your Mac to mirror my development environment. This setup includes essential packages installed via Homebrew, iTerm configurations for a better terminal experience, and additional commands you might find useful.
 
 ## Table of Contents
 
