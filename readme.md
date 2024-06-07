@@ -29,7 +29,7 @@ First install homebrew on your mac by inputting the command
 Here is my list of cask (GUI) packages
 
 ```bash
-brew install --cask datagrip discord iterm2 signal github obsidian visual-studio-code
+brew install --cask datagrip discord iterm2 signal github obsidian visual-studio-code firefox
 ```
 
 Here is a list of my brew (CLI) packages
@@ -48,9 +48,11 @@ Import the iterm.json file inside the repo for my iTerm configuration
 # Faster dock hiding
 defaults write com.apple.dock autohide-delay -float 0; defaults write com.apple.dock autohide-time-modifier -int 0;killall Dock
 
+
 # Disk eject notification popup removal (Reboot after)
 sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.DiskArbitration.diskarbitrationd.plist DADisableEjectNotification -bool YES && sudo pkill diskarbitrationd
 sudo reboot
+
 ```
 
 Java Installation (Save as \*.sh and chmod +x the file )
@@ -88,4 +90,9 @@ fi
 rm openjdk.tar.gz
 
 echo "Installation completed successfully."
+```
+
+Rustup
+```bash
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
