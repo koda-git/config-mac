@@ -14,7 +14,7 @@ Welcome to my Mac configuration repository! Here, you'll find everything you nee
 To get started, clone this repository to your local machine:
 
 ```bash
-git clone https://github.com/yourusername/mac-configs.git
+git clone https://github.com/koda-git/config-mac.git
 cd mac-configs
 ```
 
