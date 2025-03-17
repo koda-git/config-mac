@@ -29,13 +29,13 @@ First install homebrew on your mac by inputting the command
 Here is my list of cask (GUI) packages
 
 ```bash
-brew install --cask datagrip discord iterm2 signal github obsidian visual-studio-code firefox
+brew install --cask discord iterm2 signal github obsidian visual-studio-code
 ```
 
 Here is a list of my brew (CLI) packages
 
 ```bash
-brew install htop openconnect neofetch nano
+brew install htop openconnect fastfetch nano vim
 ```
 
 ## iTerm-configuration
