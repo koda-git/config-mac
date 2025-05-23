@@ -29,7 +29,7 @@ First install homebrew on your mac by inputting the command
 Here is my list of cask (GUI) packages
 
 ```bash
-brew install --cask discord iterm2 signal github obsidian visual-studio-code
+brew install --cask discord iterm2 signal github obsidian visual-studio-code shottr
 ```
 
 Here is a list of my brew (CLI) packages
