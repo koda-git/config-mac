@@ -8,7 +8,7 @@
     "Blue Component" : 1,
     "Green Component" : 1
   },
-  "Rows" : 40,
+  "Rows" : 30,
   "Ansi 11 Color" : {
     "Red Component" : 0.78431372549019607,
     "Color Space" : "sRGB",
@@ -84,6 +84,7 @@
             "path" : "path",
             "maxwidth" : 1.7976931348623157e+308,
             "base: priority" : 5,
+            "minwidth" : 0,
             "base: compression resistance" : 1,
             "shared text color" : {
               "Red Component" : 0.67859999999999998,
@@ -91,13 +92,12 @@
               "Blue Component" : 0.63,
               "Alpha Component" : 1,
               "Green Component" : 0.90000000000000002
-            },
-            "minwidth" : 0
+            }
           },
           "layout advanced configuration dictionary value" : {
+            "remove empty components" : false,
             "auto-rainbow style" : 0,
-            "algorithm" : 0,
-            "remove empty components" : false
+            "algorithm" : 0
           }
         }
       },
@@ -105,8 +105,9 @@
         "class" : "iTermStatusBarJobComponent",
         "configuration" : {
           "knobs" : {
-            "base: compression resistance" : 1,
+            "minwidth" : 0,
             "base: priority" : 5,
+            "base: compression resistance" : 1,
             "shared text color" : {
               "Red Component" : 0.63,
               "Color Space" : "sRGB",
@@ -114,7 +115,6 @@
               "Alpha Component" : 1,
               "Green Component" : 0.72719999999999996
             },
-            "minwidth" : 0,
             "maxwidth" : 1.7976931348623157e+308
           },
           "layout advanced configuration dictionary value" : {
@@ -129,8 +129,9 @@
         "class" : "iTermStatusBarGitComponent",
         "configuration" : {
           "knobs" : {
-            "base: priority" : 5,
+            "base: compression resistance" : 1,
             "iTermStatusBarGitComponentPollingIntervalKey" : 2,
+            "base: priority" : 5,
             "shared text color" : {
               "Red Component" : 0.90000000000000002,
               "Color Space" : "sRGB",
@@ -139,7 +140,6 @@
               "Green Component" : 0.63
             },
             "minwidth" : 0,
-            "base: compression resistance" : 1,
             "maxwidth" : 1.7976931348623157e+308
           },
           "layout advanced configuration dictionary value" : {
@@ -434,7 +434,7 @@
     "Green Component" : 0.14910030364990234
   },
   "Ambiguous Double Width" : false,
-  "Blur Radius" : 10.433120013297859,
+  "Blur Radius" : 9.7830608258928606,
   "Badge Max Height" : 0.20000000000000001,
   "Cursor Type" : 1,
   "Ansi 0 Color" : {
@@ -471,7 +471,7 @@
     "Blue Component" : 0.45882352941176469,
     "Green Component" : 0.36470588235294116
   },
-  "Transparency" : 0.21597406914893619,
+  "Transparency" : 0.030357142857142857,
   "Badge Top Margin" : 10,
   "Background Color" : {
     "Red Component" : 0.10000000000000001,
@@ -492,7 +492,7 @@
     "Blue Component" : 0.76078431372549016,
     "Green Component" : 0.38039215686274508
   },
-  "Columns" : 150,
+  "Columns" : 90,
   "Visual Bell" : true,
   "ASCII Ligatures" : true,
   "Custom Directory" : "No",
